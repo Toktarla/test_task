@@ -27,7 +27,7 @@ class FeelingButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: GoogleFonts.nunito(
+          style: const TextStyle(
             fontSize: 12,
             color: isSelected ? Colors.white : AppColors.blackColor,
             fontWeight: FontWeight.w600

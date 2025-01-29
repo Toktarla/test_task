@@ -32,7 +32,7 @@ class _CalendarPageState extends State<CalendarPage> {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               DateFormat('d MMMM yyyy', 'ru_RU').format(_selectedDate),
-              style: GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.greyColor),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.greyColor),
             ),
           ),
         ],
@@ -65,7 +65,7 @@ class _CalendarPageState extends State<CalendarPage> {
               },
               child: Text(
                 '${DateFormat('yyyy', 'ru_RU').format(firstDayOfMonth)} Click It!',
-                style: GoogleFonts.nunito(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.greyColor),
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.greyColor),
               ),
             ),
           ),
@@ -74,7 +74,7 @@ class _CalendarPageState extends State<CalendarPage> {
             alignment: Alignment.centerLeft,
             child: Text(
               DateFormat('MMMM', 'ru_RU').format(firstDayOfMonth).capitalize(),
-              style: GoogleFonts.nunito(fontSize: 24, fontWeight: FontWeight.w700, color: AppColors.blackColor),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: AppColors.blackColor),
             ),
           ),
           // Days of the week row
@@ -83,13 +83,13 @@ class _CalendarPageState extends State<CalendarPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('ПН', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('ВТ', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('СР', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('ЧТ', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('ПТ', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('СБ', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
-                Text('ВС', style: GoogleFonts.nunito(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ПН', style: const TextStylefontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ВТ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('СР', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ЧТ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ПТ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('СБ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ВС', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
               ],
             ),
           ),
@@ -132,7 +132,7 @@ class _CalendarPageState extends State<CalendarPage> {
                       children: [
                         Text(
                           '${day.day}',
-                          style: GoogleFonts.nunito(
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color: AppColors.blueColor

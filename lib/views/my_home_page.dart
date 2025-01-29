@@ -23,7 +23,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           DateFormatHelper.getCurrentDateInRussian(),
-          style: GoogleFonts.nunito(
+          style: const TextStyle(
             color: AppColors.greyColor,
             fontWeight: FontWeight.bold,
             fontSize: 18,

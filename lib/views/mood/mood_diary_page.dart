@@ -43,7 +43,7 @@ class _MoodDiaryPageState extends State<MoodDiaryPage> {
         children: [
           Text(
             "Что чувствуешь?",
-            style: GoogleFonts.nunito(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w800,
               color: AppColors.blackColor,
@@ -107,7 +107,7 @@ class _MoodDiaryPageState extends State<MoodDiaryPage> {
             setState(() => selfEsteem = value);
           }, isDisabled: !isMoodSelected),
           const SizedBox(height: 20),
-          Text("Заметки", style: GoogleFonts.nunito(fontSize: 16, fontWeight: FontWeight.w800, color: AppColors.blackColor),),
+          Text("Заметки", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: AppColors.blackColor),),
           const SizedBox(height: 10),
           DecoratedBox(
             decoration: BoxDecoration(
@@ -164,7 +164,7 @@ class _MoodDiaryPageState extends State<MoodDiaryPage> {
       children: [
         Text(
           title,
-          style: GoogleFonts.nunito(
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: AppColors.blackColor,

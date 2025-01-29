@@ -37,7 +37,7 @@ class SliderSection extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: List.generate(6, (index) => Text("|",
-                    style: GoogleFonts.nunito(fontSize: 18, color: AppColors.greyColor, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 18, color: AppColors.greyColor, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -63,7 +63,7 @@ class SliderSection extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 12.0, bottom: 8.0),
                     child: Text(
                       minText,
-                      style: GoogleFonts.nunito(fontSize: 14, color: AppColors.blueColor),
+                      style: const TextStyle(fontSize: 14, color: AppColors.blueColor),
                     ),
                   ),
                   Spacer(),
@@ -71,7 +71,7 @@ class SliderSection extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 12.0, bottom: 8.0),
                     child: Text(
                       maxText,
-                      style: GoogleFonts.nunito(fontSize: 14, color: AppColors.blueColor),
+                      style: const TextStyle(fontSize: 14, color: AppColors.blueColor),
                     ),
                   ),
                 ],

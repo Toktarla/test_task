@@ -6,7 +6,7 @@ import 'app_colors.dart';
 
 // Не стал делать, так как неудобно дебажить (-hot reload)
 var theme = ThemeData(
-  textTheme: TextTheme(),
+  textTheme: GoogleFonts.nunitoSansTextTheme(),
   appBarTheme: AppBarTheme(
     backgroundColor: AppColors.backgroundColor,
     titleTextStyle: GoogleFonts.nunito(

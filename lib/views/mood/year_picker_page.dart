@@ -39,7 +39,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               DateFormat('d MMMM yyyy', 'ru_RU').format(_selectedDate),
-              style: GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.greyColor),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.greyColor),
             ),
           ),
         ],
@@ -67,7 +67,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
               alignment: Alignment.center,
               child: Text(
                 '$year',
-                style: GoogleFonts.nunito(fontSize: 28, fontWeight: FontWeight.bold, color: AppColors.blueColor),
+                style: const TextStylefontSize: 28, fontWeight: FontWeight.bold, color: AppColors.blueColor),
               ),
             ),
           ),
@@ -102,7 +102,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
                       children: [
                         Text(
                           DateFormat('MMMM', 'ru_RU').format(firstDayOfMonth).capitalize(),
-                          style: GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.blueColor),
+                          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.blueColor),
                         ),
                         _buildMonthDays(firstDayOfMonth),
                     ],
@@ -147,7 +147,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
             ),
             child: Text(
               '${day.day}',
-              style: GoogleFonts.nunito(
+              style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
                 color: isSelected ? Colors.white : AppColors.blueColor,
