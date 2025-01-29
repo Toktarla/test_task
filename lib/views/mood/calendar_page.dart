@@ -83,7 +83,7 @@ class _CalendarPageState extends State<CalendarPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('ПН', style: const TextStylefontWeight: FontWeight.bold, color: AppColors.greyColor)),
+                Text('ПН', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
                 Text('ВТ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
                 Text('СР', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),
                 Text('ЧТ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.greyColor)),

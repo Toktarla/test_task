@@ -67,7 +67,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
               alignment: Alignment.center,
               child: Text(
                 '$year',
-                style: const TextStylefontSize: 28, fontWeight: FontWeight.bold, color: AppColors.blueColor),
+                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: AppColors.blueColor),
               ),
             ),
           ),
@@ -147,7 +147,7 @@ class _YearPickerPageState extends State<YearPickerPage> {
             ),
             child: Text(
               '${day.day}',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
                 color: isSelected ? Colors.white : AppColors.blueColor,

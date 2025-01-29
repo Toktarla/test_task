@@ -39,7 +39,7 @@ class CustomTabBar extends StatelessWidget {
             const SizedBox(width: 5),
             Text(
               text,
-              style: const TextStyle(
+              style: TextStyle(
                 color: isSelected ? Colors.white : AppColors.greyColor,
                 fontSize: 12,
                 fontWeight: FontWeight.w500
